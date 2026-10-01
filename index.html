@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>纯CSS表单状态研究</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>纯CSS表单状态研究</h1>
+    <p>不写JavaScript，只用CSS伪类实现表单状态反馈</p>
+  </header>
+  <nav>
+    <a href="#intro">研究说明</a>
+    <a href="#form">测试表单</a>
+  </nav>
+  <main>
+    <section id="intro">
+      <h2>研究说明</h2>
+      <p>本页面研究:valid、:invalid、:focus等CSS伪类的用法。必填项未填时显示红框，聚焦时高亮显示。</p>
+    </section>
+    <section id="form">
+      <h2>测试表单</h2>
+      <form action="#" method="get">
+        <p>
+          <label for="name">姓名（必填）</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+          <label for="mail">邮箱（必填）</label>
+          <input type="email" id="mail" name="mail" required>
+        </p>
+        <p>
+          <label for="phone">电话（选填）</label>
+          <input type="text" id="phone" name="phone">
+        </p>
+        <p>
+          <button type="submit">提交</button>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>软件开发综合实践 · 研究任务一</p>
+  </footer>
+</body>
+</html>
