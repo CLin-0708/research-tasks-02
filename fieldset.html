@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单分组与焦点研究</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>表单分组与焦点研究</h1>
+    <p>研究fieldset、legend分组作用和Tab键焦点顺序</p>
+  </header>
+  <nav>
+    <a href="#intro">研究说明</a>
+    <a href="#form">测试表单</a>
+  </nav>
+  <main>
+    <section id="intro">
+      <h2>研究说明</h2>
+      <p>本页面研究fieldset和legend对表单分组的作用。打开页面后按Tab键，观察焦点跳转的顺序。</p>
+    </section>
+    <section id="form">
+      <h2>分组测试表单</h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>个人信息</legend>
+          <p>
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name">
+          </p>
+          <p>
+            <label for="studentid">学号</label>
+            <input type="text" id="studentid" name="studentid">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>借阅信息</legend>
+          <p>
+            <label for="bookname">图书名称</label>
+            <input type="text" id="bookname" name="bookname">
+          </p>
+          <p>
+            <label for="returndate">归还时间</label>
+            <input type="date" id="returndate" name="returndate">
+          </p>
+        </fieldset>
+        <p>
+          <button type="submit">提交</button>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>软件开发综合实践 · 研究任务二</p>
+  </footer>
+</body>
+</html>
